@@ -1,0 +1,22 @@
+@media screen and (min-width: 600px)
+{
+
+nav
+{
+display: flex;
+justify-content: center;
+}
+
+
+#menu
+{
+display: none;
+}
+
+
+.gallery
+{
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+}

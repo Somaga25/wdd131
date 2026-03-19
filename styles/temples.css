@@ -1,0 +1,91 @@
+body
+{
+font-family: Roboto, sans-serif;
+margin: 0;
+background: #f0f0f0;
+}
+
+
+header
+{
+background: #1f4e79;
+color: white;
+padding: 10px;
+text-align: center;
+position: relative;
+}
+
+
+#menu
+{
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+}
+
+
+nav
+{
+display: none;
+flex-direction: column;
+}
+
+
+nav a
+{
+color: white;
+text-decoration: none;
+padding: 5px;
+}
+
+
+nav a:hover
+{
+background: white;
+color: #1f4e79;
+}
+
+
+.open nav
+{
+display: flex;
+}
+
+
+main
+{
+max-width: 800px;
+margin: auto;
+padding: 10px;
+}
+
+
+.gallery
+{
+display: grid;
+grid-template-columns: 1fr;
+gap: 10px;
+}
+
+
+figure
+{
+background: white;
+padding: 5px;
+}
+
+
+img
+{
+width: 100%;
+}
+
+
+footer
+{
+background: #1f4e79;
+color: white;
+text-align: center;
+padding: 10px;
+}
