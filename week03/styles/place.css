@@ -1,4 +1,3 @@
-/* CSS VARIABLES */
 :root {
 --primary-color: #006400;
 --secondary-color: #ffffff;
@@ -30,7 +29,7 @@ text-align: center;
 padding: 1rem;
 }
 
-/* HERO IMAGE */
+/* HERO */
 .hero img {
 width: 100%;
 height: auto;
@@ -44,33 +43,33 @@ margin: 1rem auto;
 padding: 1rem;
 }
 
-/* DATA & WEATHER BOX */
+/* DATA + WEATHER */
 .data,
 .weather {
 background-color: #ffffff;
 border-radius: 8px;
 }
 
-/* WEATHER ICON (MOBILE) */
+/* SVG ICON (MOBILE) */
 .weather-icon {
 width: 40px;
 }
 
-/* REMOVE SVG ON LARGE SCREENS */
+/* REMOVE SVG ON DESKTOP */
 @media (min-width: 768px) {
 .weather-icon {
 display: none;
 }
 }
 
-/* ADD EMOJI USING PSEUDO-ELEMENT (DESKTOP) */
+/* ADD EMOJI (DESKTOP ONLY) */
 @media (min-width: 768px) {
 .weather h2::after {
 content: " ⛅";
 }
 }
 
-/* GRID LAYOUT FOR LARGE SCREENS */
+/* GRID LAYOUT */
 @media (min-width: 768px) {
 main {
 display: grid;
