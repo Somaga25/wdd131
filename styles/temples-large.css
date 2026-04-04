@@ -1,22 +1,26 @@
-@media screen and (min-width: 600px)
+@media screen and (min-width: 700px)
 {
 
-nav
-{
-display: flex;
-justify-content: center;
-}
+    nav
+    {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
 
+    nav a
+    {
+        border: none;
+    }
 
-#menu
-{
-display: none;
-}
+    #menu
+    {
+        display: none;
+    }
 
-
-.gallery
-{
-grid-template-columns: 1fr 1fr 1fr;
-}
+    .gallery
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }

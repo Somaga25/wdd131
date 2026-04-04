@@ -1,91 +1,158 @@
 body
 {
-font-family: Roboto, sans-serif;
-margin: 0;
-background: #f0f0f0;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
 }
 
+
+/* HEADER */
 
 header
 {
-background: #1f4e79;
-color: white;
-padding: 10px;
-text-align: center;
-position: relative;
+    background-color: #1f4e79;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
 }
 
+
+header h1
+{
+    margin: 0;
+}
+
+
+/* HAMBURGER */
 
 #menu
 {
-position: absolute;
-top: 10px;
-right: 10px;
-font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 
+/* NAV */
+
 nav
 {
-display: none;
-flex-direction: column;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 
 nav a
 {
-color: white;
-text-decoration: none;
-padding: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 
 nav a:hover
 {
-background: white;
-color: #1f4e79;
+    background-color: white;
+    color: #1f4e79;
 }
 
+
+/* ACTIVE MENU */
+
+nav a.active
+{
+    background-color: white;
+    color: #1f4e79;
+    font-weight: bold;
+}
+
+
+/* SHOW MENU */
 
 .open nav
 {
-display: flex;
+    display: flex;
 }
 
+
+/* MAIN */
 
 main
 {
-max-width: 800px;
-margin: auto;
-padding: 10px;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
 }
 
+
+main h2
+{
+    text-align: center;
+}
+
+
+/* GALLERY GRID */
 
 .gallery
 {
-display: grid;
-grid-template-columns: 1fr;
-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 
-figure
+/* CARD STYLE */
+
+.gallery div
 {
-background: white;
-padding: 5px;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 
-img
+/* IMAGE */
+
+.gallery img
 {
-width: 100%;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
+
+/* TEXT */
+
+.gallery h3
+{
+    margin: 10px 0 5px;
+    color: #1f4e79;
+}
+
+
+.gallery p
+{
+    margin: 5px 0;
+}
+
+
+/* FOOTER */
 
 footer
 {
-background: #1f4e79;
-color: white;
-text-align: center;
-padding: 10px;
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
 }
